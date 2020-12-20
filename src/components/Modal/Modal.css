@@ -52,3 +52,6 @@
         transform: translateY(-100%);
     }
 }
+/* 
+ limitations for animations is that we cant render our elements on demand or on the fly....
+ it's not very reactive...our modal in this case is always in the DOM which can be messy */
