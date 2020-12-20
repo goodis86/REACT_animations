@@ -56,11 +56,21 @@ closeModal = () => {
                 />
           )}
               </Transition>
+
+              <Transition 
+              mountOnEnter
+              unmountOnExit
+              in={this.state.modalIsOpen} 
+              timeout={300}>
+              {state => (
+                    <Modal show={state} closed={this.closeModal}/>
+                )}
+              </Transition>
                  {/* ) : null} */}
         {/* conditional rendering will help with reactiveness, but limits our animations/effects
         because after rendering element, it gets cleared out from the DOM and we dont have an element to apply our closing animation in this case */}
-       {this.state.modalIsOpen  ? <Modal show={this.state.modalIsOpen} closed={this.closeModal}/> : null};
-        {this.state.modalIsOpen ? <Backdrop show={this.state.modalIsOpen}/> : null };
+      
+        {this.state.modalIsOpen ? <Backdrop show/> : null };
         <button className="Button" onClick={this.showModal}>Open Modal</button>
         <h3>Animating Lists</h3>
         <List />
