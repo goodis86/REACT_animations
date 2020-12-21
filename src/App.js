@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Transition from "react-transition-group/Transition";
-
 import "./App.css";
 import Modal from "./components/Modal/Modal";
 import Backdrop from "./components/Backdrop/Backdrop";
@@ -70,3 +69,8 @@ class App extends Component {
 }
 
 export default App;
+
+
+// REACT MOTION IS ANOTHER ALTERNATIVE TO ANIMATIONS IN REACT, CHECKOUT THEIR GITHUB AND DOCS FOR DETAILS
+// REACT MOVE IS ANOTHER ALTERNATIVE TO ANIMATIONS ...
+// REACT ROUTER TRANSITION ..ANOTHER LIBRARY W ANIMATIONS
